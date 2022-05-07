@@ -4,9 +4,9 @@ package MXN;
 import java.util.Objects;
 
 public class Employee {
-    private String name;
-    private String familyName;
-    private String patronymic;
+    private final String name;
+    private final String familyName;
+    private final String patronymic;
     private int salary;
     private int department;
     int id;
