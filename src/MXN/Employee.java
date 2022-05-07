@@ -9,15 +9,22 @@ public class Employee {
     private String patronymic;
     private int salary;
     private int department;
-    private int id;
+    int id;
+    static int counter;
 
-    public Employee(String name, String familyName, String patronymic, int salary, int department, int id) {
+
+    public static int getCounter() {
+        return counter;
+    }
+
+    public Employee(String name, String familyName, String patronymic, int salary, int department) {
         this.name = name;
         this.familyName = familyName;
         this.patronymic = patronymic;
         this.salary = salary;
         this.department = department;
-        this.id = id++;
+        this.id = getCounter();
+        counter++;
 
     }
 
@@ -64,7 +71,7 @@ public class Employee {
 
     public String toString() {
         return
-                "Full name: " + familyName + " " + name + " " + patronymic + "; " + "Monthly salary: " + getSalary() + "; " + "Number department: " + getDepartment() + ". " + "Number id: " + id;
+                "Full name: " + familyName + " " + name + " " + patronymic + "; " + "Monthly salary: " + getSalary() + "; " + "Number department: " + getDepartment() + ". ";
 
     }
 
