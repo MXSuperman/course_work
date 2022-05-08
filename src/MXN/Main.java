@@ -2,7 +2,6 @@ package MXN;
 
 import java.util.Arrays;
 
-
 public class Main {
 
     public static void countMinSalary(Employee[] employee) {
@@ -13,7 +12,7 @@ public class Main {
             }
         }
         System.out.println("Minimum wage employee: " + minimalSalary + " rub");
-    }
+        }
 
     public static void countMaxSalary(Employee[] employee) {
         int maximalSalary = employee[0].getSalary();
@@ -33,17 +32,17 @@ public class Main {
         }
         System.out.println("Amount of salary expenses per month: " + max + " rub");
 
-            int medium = max;
-            int average = medium / employee.length; // we can use double
-            System.out.println("Average salary: " + average);
-            System.out.println();
-        }
+        int medium = max;
+        int average = medium / employee.length; // we can use double
+        System.out.println("Average salary: " + average);
+        System.out.println();
+    }
 
 
     public static void main(String[] args) {
 
-
         // course work
+
 
         Employee[] employee = new Employee[10];
         employee[0] = new Employee("Ivan", "Ivanov", "Ivanovish", 55555, 1);
@@ -63,25 +62,11 @@ public class Main {
         countMaxSalary(employee);
         countMaxAverageSalary(employee);
 
+
         System.out.println("Full names List:");
         for (Employee value : employee) {
             System.out.println(value.list());
+
         }
         }
-    }
-
-
-
-//  int maxDepSalary = employee[0].getSalary()+ employee[1].getSalary();
-// for (Employee value : employee) {
-//    if (value.getDepartment() == department && maxDepSalary < value.getSalary()) {
-//        maxDepSalary = value.getSalary();
-//   }
-//    System.out.println(department + maxDepSalary);
-//int numberInDepartment = 0;
-//        for (int i = 0; i < employee.length; i++) {
-     //   if (employee[i].getDepartment() == department) {
-    //    numberInDepartment = department + 1;
-   //     }
-    //    }
-    //    System.out.println(numberInDepartment);
+        }

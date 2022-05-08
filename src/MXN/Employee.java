@@ -70,13 +70,11 @@ public class Employee {
 
 
     public String toString() {
-        return
-                "Full name: " + familyName + " " + name + " " + patronymic + "; " + "Monthly salary: " + getSalary() + "; " + "Number department: " + getDepartment() + ". ";
+        return "Full name: " + familyName + " " + name + " " + patronymic + "; " + "Monthly salary: " + getSalary() + "; " + "Number department: " + getDepartment() + ". ";
 
     }
 
     public String list() {
-        return
-        "Full name list: " + familyName + " " + name + " " + patronymic + "; ";
+        return "Full name list: " + familyName + " " + name + " " + patronymic + "; ";
     }
 }
